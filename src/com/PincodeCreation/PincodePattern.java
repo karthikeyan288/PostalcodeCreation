@@ -17,4 +17,16 @@ public class PincodePattern {
 			System.out.println(b3 + "->" + "Match not found condition-1");
 		}
 	}
+
+	public void pincodeUc2() {
+		System.out.println("Enter the pincode for uc1 :");
+		String pin = sc.nextLine();
+		String pattern = "^[0-9]{3}[0-9]{3}$";
+		boolean b3 = Pattern.matches(pattern, pin);
+		if (b3) {
+			System.out.println(b3 + "->" + " Match found for condition-1");
+		} else {
+			System.out.println(b3 + "->" + "Match not found condition-1");
+		}
+	}
 }
