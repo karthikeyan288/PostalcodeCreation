@@ -17,6 +17,7 @@ public class PincodePattern {
 			System.out.println(b3 + "->" + "Match not found condition-1");
 		}
 	}
+
 	public void pincodeUc2() {
 		System.out.println("Enter the pincode for uc1 :");
 		String pin = sc.nextLine();
