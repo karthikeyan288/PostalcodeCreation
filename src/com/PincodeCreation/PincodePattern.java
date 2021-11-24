@@ -24,9 +24,21 @@ public class PincodePattern {
 		String pattern = "^[0-9]{3}[0-9]{3}$";
 		boolean b3 = Pattern.matches(pattern, pin);
 		if (b3) {
-			System.out.println(b3 + "->" + " Match found for condition-1");
+			System.out.println(b3 + "->" + " Match found for condition-2");
 		} else {
-			System.out.println(b3 + "->" + "Match not found condition-1");
+			System.out.println(b3 + "->" + "Match not found condition-2");
+		}
+	}
+	
+	public void pincodeUc3() {
+		System.out.println("Enter the pincode for uc1 :");
+		String pin = sc.nextLine();
+		String pattern = "^[0-9]{3}(\\s)?[0-9]{3}$";
+		boolean b3 = Pattern.matches(pattern, pin);
+		if (b3) {
+			System.out.println(b3 + "->" + " Match found for condition-3");
+		} else {
+			System.out.println(b3 + "->" + "Match not found condition-3");
 		}
 	}
 }
