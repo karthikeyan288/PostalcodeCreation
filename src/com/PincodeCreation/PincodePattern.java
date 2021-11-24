@@ -48,9 +48,9 @@ public class PincodePattern {
 		String pattern = "^[1-9]{1}[0-9]{2}[ ]*[0-9]{3}$";
 		boolean b3 = Pattern.matches(pattern, pin);
 		if (b3) {
-			System.out.println(b3 + "->" + " Match found for condition-1");
+			System.out.println(b3 + "->" + " Match found for condition-4");
 		} else {
-			System.out.println(b3 + "->" + "Match not found condition-1");
+			System.out.println(b3 + "->" + "Match not found condition-4");
 		}
 	}
 }
