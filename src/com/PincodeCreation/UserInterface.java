@@ -18,6 +18,9 @@ public class UserInterface {
 		case 3:
 			pincode.pincodeUc3();
 			break;
+		case 4:
+			pincode.pincodeUc4();
+			break;
 		default:
 			System.out.println("Enter the valid data");
 			break;

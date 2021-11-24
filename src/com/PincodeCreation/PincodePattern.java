@@ -29,7 +29,7 @@ public class PincodePattern {
 			System.out.println(b3 + "->" + "Match not found condition-2");
 		}
 	}
-	
+
 	public void pincodeUc3() {
 		System.out.println("Enter the pincode for uc1 :");
 		String pin = sc.nextLine();
@@ -39,6 +39,18 @@ public class PincodePattern {
 			System.out.println(b3 + "->" + " Match found for condition-3");
 		} else {
 			System.out.println(b3 + "->" + "Match not found condition-3");
+		}
+	}
+
+	public void pincodeUc4() {
+		System.out.println("Enter the pincode for uc1 :");
+		String pin = sc.nextLine();
+		String pattern = "^[1-9]{1}[0-9]{2}[ ]*[0-9]{3}$";
+		boolean b3 = Pattern.matches(pattern, pin);
+		if (b3) {
+			System.out.println(b3 + "->" + " Match found for condition-4");
+		} else {
+			System.out.println(b3 + "->" + "Match not found condition-4");
 		}
 	}
 }
